@@ -1,0 +1,233 @@
+.hero-graphics{
+    opacity: 0.5;
+    @media(max-width:567px){
+        transform: scale(0.8);
+    }
+    @media(min-width:567px){
+        transform: scale(1.5);
+    }
+    animation: heroGraphicsAnimation 0.8s linear;
+    .computer{
+        width: 250px;
+        height: 120px;
+        margin: 0 auto;
+        border: 2px solid var(--tertiary);
+        background: linear-gradient(#ca96ff,#fff);
+        position: relative;
+        animation: computerAnimation 25s infinite;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 30px;
+            border: 2px solid var(--tertiary);
+            border-bottom: none;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%)
+        }   
+        &::after{
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 5px;
+            border-radius: 35px;
+            border: 2px solid var(--tertiary);
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%)
+        }  
+        .mobile{
+            height: 80px;
+            width: 50px;
+            border: 2px solid var(--tertiary);
+            background: linear-gradient(#ca96ff,#fff);
+            border-radius: 4px;
+            bottom: -50px;
+            position: absolute;
+            right: -25px;
+            z-index: 2;
+            background-color: var(--device-background);
+            animation: mobileAnimation 25s infinite;
+        } 
+        .tab{
+            height: 90px;
+            width: 80px;
+            border: 2px solid var(--tertiary);
+            background: linear-gradient(#ca96ff,#fff);
+            border-radius: 4px;
+            bottom: -50px;
+            position: absolute;
+            left: -40px;
+            z-index: 2;
+            background-color: var(--device-background);
+            animation: tabAnimation 25s infinite;
+        } 
+    }
+
+    .movingElements{
+        .item{
+            width: 20px;
+            height: 20px;
+            background-color: #ca96ff;
+            i{
+                font-size: 55px;
+                position: relative;
+                left: -10px;
+                top: -20px;
+                color: var(--tertiary);
+            }
+        }
+        .circle {
+            --r: 100px;
+            /* radius of the circle */
+            --t: 5;
+            /* total number of books */
+            position: relative;
+            z-index: 3;
+            top: -50px;
+            --w: calc(var(--r) * 1.2);
+            /* the top of the book is 20% out further than the edge of the circle */
+            width: calc(2 * var(--w));
+            height: calc(2 * var(--w));
+            margin: 0;
+            padding: 0;
+            animation: rotate 10s linear infinite;
+            animation-fill-mode: forwards;
+          }
+          
+          @keyframes rotate {
+            0% {
+              transform: rotate(0);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          
+          .circle::before {
+            content: '';
+            width: calc(2 * var(--r));
+            aspect-ratio: 1 / 1;
+            border: 5px solid var(--tertiary);
+            border-radius: 50%;
+            position: absolute;
+            top: calc(var(--r) * 0.2);
+            left: calc(var(--r) * 0.2);
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .item{
+            height: calc(var(--r) * 1.2);
+            width: calc(var(--r) / 5);
+            position: absolute;
+            bottom: var(--w);
+            left: calc(var(--w) - (0.5 * var(--r) / 5));
+            transform-origin: center bottom;
+            transform: rotate(calc(var(--n) * 60deg));
+            position: absolute;
+            background-size: contain;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .item:nth-child(1) {
+            --n: 1;
+          }
+          
+          .item:nth-child(2) {
+            --n: 2;
+          }
+          
+          .item:nth-child(3) {
+            --n: 3;
+          }
+          
+          .item:nth-child(4) {
+            --n: 4;
+          }
+          
+          .item:nth-child(5) {
+            --n: 5;
+          }
+          
+          .item:nth-child(6) {
+            --n: 6;
+          }
+          
+          .item:nth-child(7) {
+            --n: 7;
+          }
+          
+          .item:nth-child(8) {
+            --n: 8;
+          }
+    }
+    
+}
+
+@keyframes computerAnimation {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes mobileAnimation {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-15px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(15px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes tabAnimation {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(15px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-15px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes heroGraphicsAnimation {
+    0%{
+        transform: scale(1.5) translateX(800px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1.5) translateX(0);
+        opacity: 1;
+    }
+}
