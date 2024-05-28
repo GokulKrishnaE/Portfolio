@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import HeroGraphics from './Hero-Graphics';
 
 const logo = require('../assets/images/hero-graphics.png');
-const pdf = require('../assets/documents/document.pdf')
+const pdf = require('../assets/documents/Resume-GokulKrishnaE.pdf')
 
 export default function Hero() {
 

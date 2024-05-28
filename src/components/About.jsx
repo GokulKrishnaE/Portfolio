@@ -13,9 +13,11 @@ export default function About() {
                     </div>
                 </div>
                 <div className="col-md-6">
-                    My name is Gokul Krishna E. I am from Thalassery, Kannur, Kerala. I have a postgraduate degree in computer science from Central University of Kerala and graduate degree in computer science from Pondicherry university. I have been working as a Front end software engineer for 2.5 years at Gallgher.
-                    I have worked worked in technologies like Angular, JavaScript, TypeScript, HTML 5, CSS3, Sass, Bootstrap, jQuery etc. I am passionate about
-                    learning new technologies and aquiring skills.
+                    <div className="about-content">
+                        My name is Gokul Krishna E. I am from Thalassery, Kannur, Kerala. I have a postgraduate degree in computer science from Central University of Kerala and graduate degree in computer science from Pondicherry university. I have been working as a Front end software engineer for 2.5 years at Gallgher.
+                        I have worked worked in technologies like Angular, JavaScript, TypeScript, HTML 5, CSS3, Sass, Bootstrap, jQuery etc. I am passionate about
+                        learning new technologies and aquiring skills.
+                    </div>
                 </div>
             </div>
         </div>
