@@ -26,13 +26,13 @@ function App() {
         <Header switchMode={switchMode} tooltipTitle={tooltipTitle}></Header>
         <div className="container">
           <Hero></Hero>
+        </div>
+        <About/>
+        <div className="container">
           <Skills></Skills>
           <Experience></Experience>
         </div>
-        <About/>
-        <div className='container'>
-          <Contact></Contact>
-        </div>
+        <Contact></Contact>
         <Footer></Footer>
       </div>
     </div>

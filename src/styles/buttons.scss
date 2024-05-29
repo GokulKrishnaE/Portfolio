@@ -1,12 +1,19 @@
 .btn{
     border-radius: 4px;
     min-width: 130px;
-    padding: 10px 25px;
+    padding: 10px 65px 10px 25px;
     font-size: 18px;
     line-height: 1.4;
     transition: all .4s ease-in-out;
     position: relative;
     overflow: hidden;
+    text-align: left;
+    i{
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     &::after{
         content: '';
         position: absolute;
@@ -27,6 +34,9 @@
             border-radius: 0;
             animation: buttonHoverAnimation 0.4s ease-in-out
         }
+    }
+    span{
+        color: inherit;
     }
 }
 

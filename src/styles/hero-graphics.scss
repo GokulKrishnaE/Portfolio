@@ -5,8 +5,8 @@
     }
     @media(min-width:567px){
         transform: scale(1.5);
+        animation: heroGraphicsAnimation 0.8s linear;
     }
-    animation: heroGraphicsAnimation 0.8s linear;
     .computer{
         width: 250px;
         height: 120px;
