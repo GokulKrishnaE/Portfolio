@@ -12,16 +12,11 @@ export default function About() {
 
   return (
     <div className="section about-section" id='about-me'>
-        <div className="background-icon left-0">
-            <i className="fas fa-address-card"></i>
-        </div>
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-md-6">
                     <div className="about-left h-100">
-                        <div className="sideLine">
-                            <h1 className="section-title mb-sm-0">About Me</h1>
-                        </div>
+                        <h1 className="section-title mb-sm-0">About Me</h1>
                     </div>
                 </div>
                 <div className="col-md-6">

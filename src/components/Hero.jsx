@@ -28,10 +28,10 @@ export default function Hero() {
           <div className="col-lg-7">
             <div className="sideLine">
               <h1>Hey there!</h1>
-              <h4>I am Gokul, A Front End Software Engineer. Feel free to connect with me!</h4>
+              <h4>I’m Gokul, A Front End Software Engineer. Feel free to reach out and connect with me!</h4>
             </div>
             <div className="mt-5 hero-buttons">
-                <a href='#contact' className='btn btn-primary me-2 mb-3 mb-sm-0'><span>Connect With Me</span><i className="fas fa-envelope ms-2"></i></a>
+                <a href='mailto:gokul44krishna@gmail.com' className='btn btn-primary me-2 mb-3 mb-sm-0'><span>Say Hello!</span><i className="far fa-envelope ms-2"></i></a>
                 <a href={pdf} download className='btn btn-outline-primary'><span>Download Resume</span><i className="fa-solid fa-download ms-2"></i></a>
             </div>
           </div>

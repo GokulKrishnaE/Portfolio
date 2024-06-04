@@ -11,8 +11,8 @@
         width: 250px;
         height: 120px;
         margin: 0 auto;
-        border: 2px solid var(--tertiary);
-        background: linear-gradient(#ca96ff,#fff);
+        border: 2px solid var(--primary);
+        background: linear-gradient(#76b2ff,#fff);
         position: relative;
         animation: computerAnimation 25s infinite;
         &::before{
@@ -20,7 +20,7 @@
             position: absolute;
             width: 50px;
             height: 30px;
-            border: 2px solid var(--tertiary);
+            border: 2px solid var(--primary);
             border-bottom: none;
             bottom: -30px;
             left: 50%;
@@ -32,7 +32,7 @@
             width: 150px;
             height: 5px;
             border-radius: 35px;
-            border: 2px solid var(--tertiary);
+            border: 2px solid var(--primary);
             bottom: -35px;
             left: 50%;
             transform: translateX(-50%)
@@ -40,8 +40,8 @@
         .mobile{
             height: 80px;
             width: 50px;
-            border: 2px solid var(--tertiary);
-            background: linear-gradient(#ca96ff,#fff);
+            border: 2px solid var(--primary);
+            background: linear-gradient(#76b2ff,#fff);
             border-radius: 4px;
             bottom: -50px;
             position: absolute;
@@ -53,8 +53,8 @@
         .tab{
             height: 90px;
             width: 80px;
-            border: 2px solid var(--tertiary);
-            background: linear-gradient(#ca96ff,#fff);
+            border: 2px solid var(--primary);
+            background: linear-gradient(#76b2ff,#fff);
             border-radius: 4px;
             bottom: -50px;
             position: absolute;
@@ -69,13 +69,13 @@
         .item{
             width: 20px;
             height: 20px;
-            background-color: #ca96ff;
+            background-color: #76b2ff;
             i{
                 font-size: 55px;
                 position: relative;
                 left: -10px;
                 top: -20px;
-                color: var(--tertiary);
+                color: var(--icon-color);
             }
         }
         .circle {
@@ -109,7 +109,7 @@
             content: '';
             width: calc(2 * var(--r));
             aspect-ratio: 1 / 1;
-            border: 5px solid var(--tertiary);
+            border: 5px solid var(--primary);
             border-radius: 50%;
             position: absolute;
             top: calc(var(--r) * 0.2);

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:wght@200..1000&display=swap');
 
 @import './theme.scss',
 'buttons.scss',
@@ -10,13 +10,14 @@
     transition: color,background,background-color 0.3s ease-in-out;
 }
 body{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Mulish", sans-serif;
     letter-spacing: 1px;
     font-size: 16px;
     background-color: var(--body-color);
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6,p,span{
@@ -215,7 +216,7 @@ h1,h2,h3,h4,h5,h6,p,span{
         font-size: 30px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        color: var(--primary);
+        color: var(--heading-color);
         margin-bottom: 60px;
         @media(max-width:576px){
             font-size: 25px;
@@ -226,7 +227,7 @@ h1,h2,h3,h4,h5,h6,p,span{
 .about-section{
     margin: 90px 0px 60px;
     padding: 90px 0;
-    background-color: #ca96ff;
+    background: var(--about-bg);
     position: relative;
     .section-title{
         color: black !important;
@@ -240,7 +241,8 @@ h1,h2,h3,h4,h5,h6,p,span{
     }
     .about-content{
         @media(min-width:991px){
-            font-size: 17px;
+            font-size: 18px;
+            line-height: 1.8;
         }
     }
 }
@@ -250,10 +252,7 @@ h1,h2,h3,h4,h5,h6,p,span{
         @media(max-width:567px){
             font-size: 40px;
         }
-        background: linear-gradient(to bottom,var(--secondary),var(--tertiary));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: var(--skill-icon-color);
         &:not(:last-child){
             margin-right: 30px;
             @media(max-width:567px){
@@ -273,12 +272,12 @@ h1,h2,h3,h4,h5,h6,p,span{
             margin-right: 15px;
         }
         i{
-            color: var(--primary);
+            color: var(--icon-color);
         }
     }
 }
 .contact-us-section{
-    background: linear-gradient(#e1c3ff,#e1c3ff);
+    background: var(--contact-bg);
     padding: 60px 0;
     margin: 60px 0px 0px;
     position: relative;
@@ -293,12 +292,26 @@ h1,h2,h3,h4,h5,h6,p,span{
     padding: 25px;
     border: 2px dashed var(--border-color1);
     background-color: var(--body-color);
+    position: relative;
+    z-index: 2;
     .label{
         letter-spacing: 3px;
     }
     .form-control{
         border-radius: 0;
         border-color: var(--tertiary);
+        color: var(--text-color);
+        &.error{
+            border-color: rgb(227, 52, 52) !important;
+        }
+    }
+    .errorMsg{
+        color: rgb(227, 52, 52);
+    }
+    .successMsg{
+        margin-top: 30px;
+        color: rgb(17, 163, 58);
+        transition: all 0.3s ease-in-out;
     }
 }
 

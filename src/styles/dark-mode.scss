@@ -27,4 +27,11 @@ body.dark-mode{
     .scroll-to-bottom i{
         color: #d1d1d1;
     }
+    .btn-outline-primary{
+        &:hover{
+            background: var(--button-primary-hover-bg);
+            border: var(--button-primary-hover-border);
+            color: var(--button-primary-hover-color);
+        }
+    }
 }

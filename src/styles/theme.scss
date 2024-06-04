@@ -2,36 +2,51 @@
     --body-color: rgb(255, 255, 255); 
     --header-bg: #fff;
     --text-color: #121212;
-    --primary: #46008c;
-    --secondary: #8817f9;
-    --tertiary: #a147fa;
+    --heading-color: #001939;
+    --primary: #76b2ff;
+    --secondary: #76b2ff;
+    --tertiary: #76b2ff;
     // buttons
-    --button-primary-bg: linear-gradient(to right,#46008c,#9226ff);
-    --button-primary-border: linear-gradient(to right,#46008c,#9226ff);
-    --button-primary-color: #ffffff;
+    --button-primary-bg: linear-gradient(to right,var(--primary),var(--secondary));
+    --button-primary-border: linear-gradient(to right,var(--primary),var(--secondary));
+    --button-primary-color: #000000;
     --button-primary-hover-bg: var(--secondary);
     --button-primary-hover-border: var(--secondary);
-    --button-primary-hover-color: #fff;
+    --button-primary-hover-color: #000000;
     --switch-light: rgb(216, 97, 0); 
     
-    --card-bg1: #e3c7ff;
+    --card-bg1: #c1dcff;
     --border-color1: #d8d8d8;
     --device-background: var(--body-color);
+    --about-bg: #c1dcff;
+    --contact-bg: linear-gradient(#c1dcff,#c1dcff);
+
+    --icon-color: #0051ba;
+    --skill-icon-color: #002658;
 }
 .dark-mode{
     --body-color: rgb(29, 29, 29); 
     --header-bg: rgb(29, 29, 29);
-    --text-color: #ffffff;
+    --text-color: #f0f0f0;
+    --heading-color: #f0f0f0;
     --primary: #ffffff;
-    --secondary: #c58cff;
-    --tertiary: #b061ff;
+    --secondary: #76b2ff;
+    --tertiary: #76b2ff;
     --switch-light: rgb(255, 255, 255);
     // buttons
     --button-primary-bg: transparent;
     --button-primary-border: #ffffff;
     --button-primary-color: #fff;
-    --button-primary-hover-bg: #46008c;
-    --button-primary-hover-border: #46008c;
-    --primary-hover-color: #46008c;
+    --button-primary-hover-bg: #76b2ff;
+    --button-primary-hover-border: #76b2ff;
+    --primary-hover-color: #76b2ff;
     --device-background: var(--body-color);
+
+    --card-bg1: #e5e5e5;
+    --border-color1: #e5e5e5;
+    --about-bg: #e5e5e5;
+    --contact-bg: linear-gradient(#e5e5e5,#e5e5e5);
+
+    --icon-color: #e5e5e5;
+    --skill-icon-color: #e5e5e5;
 }

@@ -1,6 +1,7 @@
 .timeline{
     .vertical-timeline-element-content{
         background-color: var(--card-bg1);
+        box-shadow: none;
     }
     .vertical-timeline-element-content-arrow{
         border-right: 7px solid var(--card-bg1);
