@@ -108,7 +108,7 @@ h1,h2,h3,h4,h5,h6,p,span{
             }
             &::after{
                 content: '\f185';
-                font-family: "Font Awesome 6 Pro";
+                font-family: "Font Awesome 6 Free";
                 position: absolute;
                 color: #fff;
                 font-size: 13px;
@@ -123,6 +123,7 @@ h1,h2,h3,h4,h5,h6,p,span{
                 border-radius: 24px;
                 background-color: var(--switch-light);
                 transition: transform 0.3s ease-in-out;
+                padding: 2px 0 0 2px;
             }
         }
         // input:not(:checked) + label::after{
@@ -208,6 +209,12 @@ h1,h2,h3,h4,h5,h6,p,span{
         right: 0;
         animation: scrollToBottomAnimation 2s linear infinite;
     }
+    #downloadIcon{
+        animation: downloadIconAnimation 1s linear infinite alternate;
+    }
+    #mailIcon{
+        animation: mailIconAnimation 1s linear infinite alternate;
+    }
 }
 
 .section{
@@ -230,7 +237,7 @@ h1,h2,h3,h4,h5,h6,p,span{
     background: var(--about-bg);
     position: relative;
     .section-title{
-        color: black !important;
+        color: var(--about-color) !important;
     }
     @media(max-width:567px){
         padding: 60px 0;
@@ -240,12 +247,66 @@ h1,h2,h3,h4,h5,h6,p,span{
         }
     }
     .about-content{
+        color: var(--about-color);
         @media(min-width:991px){
             font-size: 18px;
             line-height: 1.8;
         }
     }
+    #aboutMeheading{
+        h1{
+            transform: translateX(-2999px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s ease-in-out;
+        } 
+    }
+    #aboutMeContent{
+        .about-content{
+            transform: translateX(2999px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s ease-in-out;
+        } 
+    }
 }
+#about-me.active{
+    #aboutMeheading{
+        h1{
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        } 
+    }
+    #aboutMeContent{
+        .about-content{
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        } 
+    }
+}
+
+// Variables
+$increment: 50px;
+
+// Mixin to generate transform translate
+@mixin translate-loop($count) {
+    @for $i from 1 through $count {
+      @if ($i % 2 == 0) {
+        &:nth-of-type(#{$i}) {
+          transform: translate3D(-$i * $increment,-$i * $increment,-$i * $increment);
+        }
+      } @else {
+        &:nth-of-type(#{$i}) {
+          transform: translate3D($i * $increment,$i * $increment,$i * $increment);
+        }
+      }
+    }
+  }
+  .skills-section{
+    overflow: hidden;
+  }
 .skills-icons{
     i{
         font-size: 55px;
@@ -261,6 +322,18 @@ h1,h2,h3,h4,h5,h6,p,span{
         }
         &:hover{
             animation: iconAnimation .3s linear;
+        }
+
+        @include translate-loop(6); 
+        transition: all 0.5s ease-in;
+        opacity: 0;
+        visibility: hidden;
+    }
+    &.active{
+        i{
+            transform: none;
+            opacity: 1;
+            visibility: visible;
         }
     }
 }
@@ -383,5 +456,13 @@ h1,h2,h3,h4,h5,h6,p,span{
     }
     100%{
         transform: translateY(0px);
+    }
+}
+@keyframes downloadIconAnimation{
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(-30%);
     }
 }

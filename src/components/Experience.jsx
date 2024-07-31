@@ -15,7 +15,7 @@ export default function Experience() {
             >
                 <h3 className="vertical-timeline-element-title">Software Engineer</h3>
                 <h4 className="vertical-timeline-element-subtitle">Gallgher</h4>
-                <p><strong>Skills: </strong>Angular, PrimeNG, HTML5, CSS3, Javascript, jQuery</p>
+                <p><strong>Skills: </strong>Angular, PrimeNG, HTML5, CSS3, Javascript, Bootstrap, jQuery, Gulp, Accessibiltiy</p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -24,7 +24,7 @@ export default function Experience() {
             >
                 <h3 className="vertical-timeline-element-title">Associate Software Engineer</h3>
                 <h4 className="vertical-timeline-element-subtitle">BUCK</h4>
-                <p><strong>Skills: </strong>Angular, PrimeNG, HTML5, CSS3, Javascript, jQuery</p>
+                <p><strong>Skills: </strong>Angular, PrimeNG, HTML5, CSS3, Javascript, Bootstrap, jQuery, Gulp, Accessibiltiy</p>
             </VerticalTimelineElement>
         </VerticalTimeline> 
       </div>

@@ -3,16 +3,16 @@
     --header-bg: #fff;
     --text-color: #121212;
     --heading-color: #001939;
-    --primary: #76b2ff;
+    --primary: #2f7bdf;
     --secondary: #76b2ff;
     --tertiary: #76b2ff;
     // buttons
-    --button-primary-bg: linear-gradient(to right,var(--primary),var(--secondary));
-    --button-primary-border: linear-gradient(to right,var(--primary),var(--secondary));
-    --button-primary-color: #000000;
+    --button-primary-bg: var(--primary);
+    --button-primary-border: linear-gradient(to right,var(--primary),var(--primary));
+    --button-primary-color: #ffffff;
     --button-primary-hover-bg: var(--secondary);
     --button-primary-hover-border: var(--secondary);
-    --button-primary-hover-color: #000000;
+    --button-primary-hover-color: #ffffff;
     --switch-light: rgb(216, 97, 0); 
     
     --card-bg1: #c1dcff;
@@ -42,11 +42,11 @@
     --primary-hover-color: #76b2ff;
     --device-background: var(--body-color);
 
-    --card-bg1: #e5e5e5;
-    --border-color1: #e5e5e5;
-    --about-bg: #e5e5e5;
-    --contact-bg: linear-gradient(#e5e5e5,#e5e5e5);
+    --card-bg1: #aac1cf;
+    --border-color1: #aac1cf;
+    --about-bg: #aac1cf;
+    --contact-bg: linear-gradient(#aac1cf,#aac1cf);
 
-    --icon-color: #e5e5e5;
-    --skill-icon-color: #e5e5e5;
+    --icon-color: #aac1cf;
+    --skill-icon-color: #aac1cf;
 }
