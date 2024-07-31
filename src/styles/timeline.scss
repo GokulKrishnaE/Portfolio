@@ -1,0 +1,41 @@
+.timeline{
+    .vertical-timeline-element-content{
+        background-color: var(--card-bg1);
+        box-shadow: none;
+    }
+    .vertical-timeline-element-content-arrow{
+        border-right: 7px solid var(--card-bg1);
+    }
+    .vertical-timeline-element-title{
+        font-size: 25px;
+        color: #000;
+    }
+    .vertical-timeline-element-subtitle{
+        font-size: 20px;
+        margin-top: 5px;
+        font-style: italic;
+        color: #000;
+    }
+    .vertical-timeline-element-date{
+        @media(max-width:576px){
+            color: #000;
+        }
+    }
+    p{
+        color: #000;  
+    }
+    .vertical-timeline-element-icon{
+        background: var(--card-bg1);
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        @media(max-width:576px){
+            font-size: 20px;
+        }
+    }
+    &::before{
+        background: var(--border-color1) !important;
+    }
+}
