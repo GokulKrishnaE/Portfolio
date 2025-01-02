@@ -36,3 +36,264 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+/* latest */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --primary: rgb(246, 255, 0);
+    --primary-light: rgb(252, 255, 160);
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+.text-primary-light{
+    color: var(--primary-light) !important;
+}
+body{
+    background-color: #0c0c0c;
+    font-family: "Lora", serif;
+}
+
+.container{
+    max-width: 95%;
+}
+
+p{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+h1,h2,h3{
+    font-family: "Lora", serif;
+    color: white;
+    font-weight: 400;
+}
+
+
+.max-500{
+    max-width: 500px;
+}
+
+.section-border{
+    /* border-bottom: 5px solid var(--primary); */
+}
+
+
+.section-skills{
+    background: #141414;
+}
+.section-title{
+    font-size: 50px;
+    color: var(--primary);;
+}
+@media(min-width:991px){
+    .max-80{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .mt-40{
+        margin-top: 80px;
+    }
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    color: white;
+    font-size: 22px;
+}
+
+.btn{
+  padding: 10px 32px;
+  border-radius: 24px;
+  font-size: 1.125rem;
+  border-width: 2px;
+}
+.btn-primary{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.btn-primary:hover{
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+@media(max-width:568px){
+  html{
+      font-size: 85%;
+  }
+}
+
+
+
+
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header .nav-links{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header .name{
+  color: white;
+  font-size: 1.375rem;
+  text-decoration: none;
+}
+
+header .nav-link{
+  text-decoration: none;
+  color: white;
+  font-size: 1.25rem;
+}
+header .nav-links a:hover{
+  border-bottom: 3px solid white;
+}
+.navbar-toggler{
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.section{
+  padding: 60px 0;
+}
+
+.hero-section p{
+  font-size: 1.375rem;
+}
+.hero-section{
+  min-height: calc(100vh - 86px);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* border-bottom: 5px solid var(--primary); */
+  position: relative;
+}
+.hero-bg-icon{
+  position: absolute;
+  font-size: 500px;
+  z-index: -1;
+  color: #141414;
+}
+@media(max-width:768px){
+  .hero-bg-icon{
+      font-size: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}
+.hero-section div:not(.container){
+  width: 100%;
+}
+.hero-section h1{
+  font-size: 5rem;
+}
+
+.skills-section{
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+}
+.skills-section ul li:not(:last-child){
+  margin-bottom: 30px;
+}
+.skill-items{
+  margin-top: 20px;
+}
+.skill-items .skill{
+  display: inline-block;
+  background-color: var(--primary-light);
+  padding: 6px 20px;
+  border-radius: 24px;
+  color: black;
+  font-size: 1.125rem;
+  margin-right: 10px;
+}
+
+@media(max-width:768px){
+  .skill-items .skill{
+      margin-bottom: 10px;
+  }
+}
+
+.experiences .companyName{
+  position: relative;
+  padding-left: 50px;
+}
+.experiences .position{
+  margin-top: 25px;
+  padding-left: 50px;
+}
+.experiences .position .position-name{
+  position: relative;
+  padding-left: 20px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.experiences .position .position-year{
+  color: rgb(212, 212, 212);
+  padding-left: 20px;
+  font-size: 1.1875rem;
+  margin-bottom: 20px;
+}
+.experiences .position .position-desc{
+  padding-left: 20px;
+}
+.experiences .position .position-desc p{
+  font-size: 20px;
+}
+.experiences .position .position-name::before{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.experiences .position .position-name::after{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 250px;
+  background: linear-gradient(var(--primary-light),#0c0c0c);
+  left: 5px;
+  top: 15px;
+}
+.experiences .companyName::before{
+  content: "\f1ad";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: black;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

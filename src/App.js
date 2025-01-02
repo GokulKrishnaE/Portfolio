@@ -24,16 +24,11 @@ function App() {
     <div className="app-wrapper">
       <div>
         <Header switchMode={switchMode} tooltipTitle={tooltipTitle}></Header>
-        <div className="container">
-          <Hero></Hero>
-        </div>
+        <Hero></Hero>
         <About/>
-        <div className="container">
-          <Skills></Skills>
-          <Experience></Experience>
-        </div>
-        <Contact></Contact>
-        <Footer></Footer>
+        <Experience></Experience>
+        {/* <Contact></Contact>
+        <Footer></Footer> */}
       </div>
     </div>
   );

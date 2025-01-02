@@ -26,37 +26,25 @@ export default function Header({switchMode,tooltipTitle}){
     //   }, [headerDropdown]);
 
     return(
-        <div className="header">
-            <div className="container">
-            <div className="d-flex justify-content-between align-items-center">
-                <div>
-                    <h1 className="header-title">Gokul Krishna E</h1>
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="name" href="#">Gokul Krishna E</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars text-white"></i>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-lg-4 py-3 py-lg-0 ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Download Resume</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <ul ref={headerDropdown} className={`list-unstyled header-links ${openNav?'active': ''}`}>
-                    <li><a  onClick={()=>scrollToDiv('about-me')}><i className="fas fa-user me-2 d-sm-none"></i>About Me</a></li>
-                    <li><a onClick={()=>scrollToDiv('contact')}><i className="fas fa-phone me-2 d-sm-none"></i>Contact</a></li>
-                    <div className="d-none d-sm-block">
-                    <li className="switchMode">
-                            <input type="checkbox" name="modeToggle" id="modeToggle" onChange={(e)=>switchMode(e)}/>
-                            <label htmlFor="modeToggle"><span className="visually-hidden">Toggle Mode</span></label>
-                        </li>
-                    </div>
-                </ul>
-                <div className="d-sm-none">
-                    <div className="switchMode">
-                        <input type="checkbox" name="modeToggle1" id="modeToggle1" onChange={(e)=>switchMode(e)}/>
-                        <label htmlFor="modeToggle1"><span className="visually-hidden">Toggle Mode</span></label>
-                    </div>
-                </div>
-                <div className="nav-toggle d-sm-none" onClick={()=>setOpenNav((prev)=>!openNav)}>
-                    {
-                        openNav
-                        ? <i className="fa-solid fa-xmark"></i>
-                        : <i className="fa-solid fa-bars"></i>
-                    }
-                </div>
-            </div>
-            </div>
-        </div>
+              </nav>
+        </header>
     )
 }

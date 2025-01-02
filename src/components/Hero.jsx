@@ -23,29 +23,23 @@ export default function Hero() {
   },[showArrow])
 
   return (
-    <div className='hero-section'>
-        <div className='row align-items-center hero-row'>
-          <div className="col-lg-7">
-            <div className="sideLine">
-              <h1>Hey there!</h1>
-              <h4>I’m Gokul, A Front End Software Engineer. Feel free to reach out and connect with me!</h4>
+    <section class="section hero-section section-border">
+            <div class="container">
+                <div class="d-md-flex align-items-center justify-content-between w-100% gap-5">
+                    <div class="max-500">
+                        <p class="mb-0">Hi Web! I am a</p>
+                        <h1>Full Stack <span class="text-primary">Developer</span></h1>
+                    </div>
+                    <div>
+                        <p>I am <span class="text-primary">Gokul Krishna E</span>. I am a passionate Full Stack Developer with expertise in building user-centric applications. From intuitive front-end designs to robust back-end solutions, I specialize in creating scalable systems that bring ideas to life with clean, maintainable code. Let’s collaborate to build something extraordinary!</p>
+                        <button class="btn btn-primary">Download Resume</button>
+                    </div>
+                </div>
             </div>
-            <div className="mt-5 hero-buttons">
-                <a href='mailto:gokul44krishna@gmail.com' className='btn btn-primary me-2 mb-3 mb-sm-0'><span id="mailIcon">Say Hello!</span><i className="far fa-envelope ms-2"></i></a>
-                <a href={pdf} download className='btn btn-outline-primary'><span>Download Resume</span><i id="downloadIcon" className="fa-solid fa-download ms-2"></i></a>
+            <div class="hero-bg-icon">
+                <i class="fa-solid fa-layer-group"></i>
             </div>
-          </div>
-          <div className="col-lg-5">
-            <HeroGraphics/>
-          </div>
-        </div>
-        {
-          showArrow &&
-          <div className="scroll-to-bottom">
-          <i className="fas fa-circle-arrow-down"></i>
-          </div>
-        }
-    </div>
+        </section>
 
 
   )
