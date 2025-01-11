@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { Button } from "@mui/material";
 import HeroGraphics from './Hero-Graphics';
 
+import file from '../assets/documents/Resume_FrontEnd-Engineer_GokulKrishnaE.pdf'
+
 const logo = require('../assets/images/hero-graphics.png');
 const pdf = require('../assets/documents/Resume-GokulKrishnaE.pdf')
 
@@ -32,7 +34,7 @@ export default function Hero() {
                     </div>
                     <div>
                         <p>I am <span class="text-primary">Gokul Krishna E</span>. I am a passionate Full Stack Developer with expertise in building user-centric applications. From intuitive front-end designs to robust back-end solutions, I specialize in creating scalable systems that bring ideas to life with clean, maintainable code. Let’s collaborate to build something extraordinary!</p>
-                        <button class="btn btn-primary">Download Resume</button>
+                        <a href={file} download="Resume_GokulKrishnaE.pdf" class="btn btn-primary">Download Resume</a>
                     </div>
                 </div>
             </div>

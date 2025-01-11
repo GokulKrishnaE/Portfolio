@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 export default function About() {
   return (
-    <section class="section section-skills">
+    <section class="section section-skills" id="about-section">
     <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="max-80 mt-40">
@@ -12,7 +12,7 @@ export default function About() {
                 <ul class="skills">
                     <li>
                         <div>
-                            <span class="text-primary-light fw-bold me-3">Frontend Development:</span><span>Crafting visually stunning, responsive, and user-friendly interfaces tailored to deliver exceptional user experiences.</span>
+                            <span class="text-primary-light fw-bold me-3">Frontend Development:</span><span>Crafting visually stunning, responsive, user-friendly and accessible interfaces tailored to deliver exceptional user experiences.</span>
                             <div class="skill-items">
                                 <span class="skill"><i class="fa-brands fa-angular me-2"></i>Angular</span>
                                 <span class="skill"><i class="fa-brands fa-react me-2"></i>React</span>

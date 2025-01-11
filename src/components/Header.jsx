@@ -1,4 +1,5 @@
 import React, { useState,useEffect, useRef } from "react";
+import file from '../assets/documents/Resume_FrontEnd-Engineer_GokulKrishnaE.pdf'
 
 
 export default function Header({switchMode,tooltipTitle}){
@@ -26,25 +27,36 @@ export default function Header({switchMode,tooltipTitle}){
     //   }, [headerDropdown]);
 
     return(
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                  <a class="name" href="#">Gokul Krishna E</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars text-white"></i>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav gap-lg-4 py-3 py-lg-0 ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link">Download Resume</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-        </header>
+      <header>
+      <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="name" href="#">Gokul Krishna E</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hamburgerIcon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav gap-lg-4 py-3 py-lg-0 ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience-section">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href={file} download="resume.pdf">Download Resume</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
     )
 }

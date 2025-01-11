@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export default function Experience() {
   return (
-    <section class="section experience-section">
+    <section class="section experience-section" id="experience-section">
       <div class="container">
           <h2 class="section-title">Experience</h2>
           <div class="max-80">
